@@ -37,7 +37,7 @@
         <!-- DONE (10) Specify the name of the meta-data as android.support.PARENT_ACTIVITY -->
         <!-- DONE (11) Specify the value of the meta data as .MainActivity -->
         <activity android:name=".ChildActivity"
-           android:parentActivityName=".ChildActivity"
+           android:parentActivityName=".MainActivity"
             >
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity">
