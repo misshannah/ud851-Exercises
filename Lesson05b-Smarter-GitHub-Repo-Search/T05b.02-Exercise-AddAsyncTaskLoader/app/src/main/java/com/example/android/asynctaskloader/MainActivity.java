@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // DONE (21) Call getSupportLoaderManager and store it in a LoaderManager variable
         // DONE (22) Get our Loader by calling getLoader and passing the ID we specified
         // DONE (23) If the Loader was null, initialize it. Else, restart it.
-    
+
 
     /**
      * This method will make the View for the JSON data visible and
