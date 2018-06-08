@@ -101,24 +101,43 @@ public class MainActivity extends AppCompatActivity {
     // DONE (2) In the doInBackground method, write the code to access the DroidTermsExample
     // provider and return the Cursor object
     // DONE (4) In the onPostExecute method, store the Cursor object in mData
+<<<<<<< HEAD
     public class myTask extends AsyncTask <Void, Void, Cursor> {
 
         @Override
         protected Cursor doInBackground(Void... voids) {
             ContentResolver resolver = getContentResolver();
+=======
+
+    public class myTask extends AsyncTask<Void, Void, Cursor> {
+
+        @Override
+        protected Cursor doInBackground(Void... voids) {
+            // Get the content resolver
+                        ContentResolver resolver = getContentResolver();
+>>>>>>> 6c7cb522d5a41f5a48f0be8122570a90b8824771
 
                                 // Call the query method on the resolver with the correct Uri from the contract class
                                         Cursor cursor = resolver.query(DroidTermsExampleContract.CONTENT_URI,
                                         null, null, null, null);
+<<<<<<< HEAD
             return cursor;
         }
 
+=======
+                       return cursor;
+        }
+>>>>>>> 6c7cb522d5a41f5a48f0be8122570a90b8824771
         @Override
         protected void onPostExecute(Cursor cursor) {
                         super.onPostExecute(cursor);
 
+<<<<<<< HEAD
                                 // Set the data for MainActivity
                                         mData = cursor;
+=======
+            mData = cursor;
+>>>>>>> 6c7cb522d5a41f5a48f0be8122570a90b8824771
                     }
     }
 
